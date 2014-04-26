@@ -1,7 +1,7 @@
 ###Recommendation Engine
-Recommendation engines are key to some of the most iconic businesses on the web—think Amazon’s “Customers Who Bought This” section or Netflix’s personalized movie suggestions. Recommender systems take data collected on existing user behaviou and uses it to determine what users might also like. By using past behaviour of a large customer base, we can predict the taste preference of an individual.
+Recommendation engines are key to some of the most iconic businesses on the web—think Amazon’s “Customers Who Bought This” section or Netflix’s personalized movie suggestions. Recommender systems take data collected on existing user behaviour and uses it to determine what users might also like. By using past behaviour of a large customer base, we can predict the taste preference of individuals.
 
-This project aims at implementing a scalable item to item recommender using Apache Hadoop, Mahout, Pig and Python.
+This project aims to implementing a scalable item to item recommender using Apache Hadoop, Mahout, Pig and Python. The reason why Hadoop is the tool chosen to implement the recommender is simple - On an e-commerce website, there could be 10,000 products for sale. Since a recommendation engine is computing correlations between pairs of items, the complexity is O(n x n), meaning that there could be up to 100,000,000 correlation computations. Since correlation calculations lend itself well to the MapReduce paradigm, we will use Hadoop. 
 
 ----------------------------
 ####Current Progress
